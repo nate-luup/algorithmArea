@@ -189,14 +189,129 @@ var a = [1, 2, 3]
 - 27 移除元素
 
 ## 链表（LinkList）
-## 队列（Queue）
-## 栈（Stack）
-## 哈希表（HashTable）
-## 集合（Set）
-## 树（Tree）
-## 堆（Heap）
-## 图（Graph）
+- 单端链表
+    - 当前元素
+    - next指针
+- 双端列表
+    - 当前元素
+    - pre指针
+    - next指针
+### 时间复杂度
+- 访问 Access `O(N)`
+    - 从头到尾遍历 next -> next
+- 搜索 Search `O(N)`
+- 插入 Insert `O(1)`
+    - 修改指针
+- 删除 Delete `O(1)`
 
+### 特点
+- 写很快
+- 读很慢
+
+应用场景： 读少写多
+
+### 常用操作
+- 创建链表
+- 添加元素
+- 访问元素
+- 查找元素
+- 删除元素
+- 链表的长度
+### 练习题
+- 203 移除链表元素
+- 206 反转链表
+
+## 队列（Queue）
+### 时间复杂度
+- 访问 Access `O(N)`
+- 搜索 Search `O(N)`
+- 插入 Insert `O(1)`
+- 删除 Delete `O(1)`
+
+### 特点
+
+应用场景：
+
+### 常用操作
+### 练习题
+## 栈（Stack）
+### 时间复杂度
+- 访问 Access `O(N)`
+- 搜索 Search `O(N)`
+- 插入 Insert `O(1)`
+- 删除 Delete `O(1)`
+
+### 特点
+
+应用场景：
+
+### 常用操作
+### 练习题
+## 哈希表（HashTable）
+### 时间复杂度
+- 访问 Access `O(N)`
+- 搜索 Search `O(N)`
+- 插入 Insert `O(1)`
+- 删除 Delete `O(1)`
+
+### 特点
+
+应用场景：
+
+### 常用操作
+### 练习题
+## 集合（Set）
+### 时间复杂度
+- 访问 Access `O(N)`
+- 搜索 Search `O(N)`
+- 插入 Insert `O(1)`
+- 删除 Delete `O(1)`
+
+### 特点
+
+应用场景：
+
+### 常用操作
+### 练习题
+## 树（Tree）
+### 时间复杂度
+- 访问 Access `O(N)`
+- 搜索 Search `O(N)`
+- 插入 Insert `O(1)`
+- 删除 Delete `O(1)`
+
+### 特点
+
+应用场景：
+
+### 常用操作
+### 练习题
+## 堆（Heap）
+### 时间复杂度
+- 访问 Access `O(N)`
+- 搜索 Search `O(N)`
+- 插入 Insert `O(1)`
+- 删除 Delete `O(1)`
+
+### 特点
+
+应用场景：
+
+### 常用操作
+### 练习题
+## 图（Graph）
+### 时间复杂度
+- 访问 Access `O(N)`
+- 搜索 Search `O(N)`
+- 插入 Insert `O(1)`
+- 删除 Delete `O(1)`
+
+### 特点
+
+应用场景：
+
+### 常用操作
+### 练习题
 # 算法题讲解
 
 - [Leetcode 力扣 1-300 题视频讲解合集](https://www.bilibili.com/video/BV1xa411A76q)
