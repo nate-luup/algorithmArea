@@ -420,7 +420,18 @@ DFS
 - 权重图： 求最短路径
     - 贝尔曼-福特算法
     - 迪克斯特拉算法
-# 算法题讲解
+# 常用算法
+
+## 双指针（Two Pointers）
+用两个指针解决一道题
+
+- 普通双指针： 两个指针往同一个方向移动
+- 对撞双指针：两个指针面对面移动
+- 快慢双指针：慢指针 + 快指针
+    - 环形链表问题
+### 练习题
+- 141 环形链表 Linked List Cycle
+- 881 救生艇
 
 - [Leetcode 力扣 1-300 题视频讲解合集](https://www.bilibili.com/video/BV1xa411A76q)
 - [Leetcode 力扣 301+题视频讲解合集](https://www.bilibili.com/video/BV1eK4y1j7fT)
