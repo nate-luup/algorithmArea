@@ -435,6 +435,9 @@ DFS
 
 - [Leetcode 力扣 1-300 题视频讲解合集](https://www.bilibili.com/video/BV1xa411A76q)
 - [Leetcode 力扣 301+题视频讲解合集](https://www.bilibili.com/video/BV1eK4y1j7fT)
+# 排序
+
+## 快速排序
 
 # 刷题（按照标签来刷）
 

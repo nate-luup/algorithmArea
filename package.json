@@ -1,0 +1,30 @@
+{
+  "name": "algorithmArea",
+  "version": "1.0.0",
+  "description": "## 时间复杂度",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nate-luup/algorithmArea.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nate-luup/algorithmArea/issues"
+  },
+  "homepage": "https://github.com/nate-luup/algorithmArea#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}
