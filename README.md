@@ -439,6 +439,8 @@ DFS
 
 ## 快速排序
 
+# 检索
+## 二分检索
 # 刷题（按照标签来刷）
 
 - [leetcode](https://leetcode-cn.com/)
