@@ -1,4 +1,4 @@
-import { ListNode, print } from "../linked-list-mock";
+import { ListNode, list2Str } from "../linked-list-mock";
 import removeElements from "./index";
 
 test("removeElements 6", () => {
@@ -15,7 +15,8 @@ test("removeElements 6", () => {
   node5.next = node6;
 
   let ret = removeElements(node1, 6);
-  print(ret);
+  let retStr = list2Str(ret);
+  expect(retStr).toBe("1=>2=>3=>4=>5");
 });
 
 test("removeElements 6", () => {
@@ -32,5 +33,6 @@ test("removeElements 6", () => {
   node4.next = node5;
 
   let ret = removeElements(node1, 6);
-  print(ret);
+  let retStr = list2Str(ret);
+  expect(retStr).toBe("1=>2=>3=>4=>5");
 });
