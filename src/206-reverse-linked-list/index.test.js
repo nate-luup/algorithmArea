@@ -1,4 +1,6 @@
-import { ListNode, reverseList } from "./index";
+import { ListNode, print } from "../linked-list-mock";
+
+import reverseList from "./index";
 
 test("reverseList", () => {
   let node1 = new ListNode(1);
@@ -13,13 +15,5 @@ test("reverseList", () => {
   node4.next = node5;
 
   let ret = reverseList(node1);
-
-  let cur = ret;
-  let arr = [];
-  while (cur) {
-    arr.push(cur.val);
-    cur = cur.next;
-  }
-
-  console.log(arr.join("=>"));
+  print(ret);
 });
