@@ -3,13 +3,20 @@ function TreeNode(val, left, right) {
   this.left = left === undefined ? null : left;
   this.right = right === undefined ? null : right;
 }
-function tree2Str(root) {
-  if (root == null) {
-    return "";
+
+function preorderTraversal(root, arr = []) {
+  if (root) {
+    // 前序遍历： 根节点 -> 左子树 -> 右子树
+    arr.push(root.val);
+    preorderTraversal(root.left, arr);
+    preorderTraversal(root.right, arr);
   }
-
-  let { left, right, val } = root;
-
-  return val + tree2Str(left) + "" + tree2Str(right);
+  return arr;
 }
+
+function tree2Str(root) {
+  let ret = preorderTraversal(root);
+  return ret.join("=>");
+}
+
 export { TreeNode, tree2Str };

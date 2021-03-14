@@ -1,7 +1,7 @@
 import { TreeNode, tree2Str } from "../data-structure";
-import invertTree from "./index";
+import preorderTraversal from "./index";
 
-test("invertTree", () => {
+test("preorderTraversal", () => {
   let t1 = new TreeNode(1);
   let t2 = new TreeNode(2);
   let t3 = new TreeNode(3);
@@ -16,8 +16,8 @@ test("invertTree", () => {
   t2.right = t3;
   t7.left = t6;
   t7.right = t9;
-  //   console.log(tree2Str(t4));
-  invertTree(t4);
-  //   console.log(tree2Str(t4));
-  expect(tree2Str(t4)).toBe("4=>7=>9=>6=>2=>3=>1");
+
+  let ret = preorderTraversal(t4);
+  console.log(ret);
+  expect(ret).toEqual([4, 2, 1, 3, 7, 6, 9]);
 });
