@@ -1,2 +1,2 @@
 export { ListNode, print, list2Str } from "./LinkedList";
-export { TreeNode } from "./Tree";
+export { TreeNode, tree2Str } from "./Tree";
