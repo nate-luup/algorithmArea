@@ -1,4 +1,4 @@
-import { ListNode, list2Str } from "../linked-list-mock";
+import { ListNode, list2Str } from "../data-structure";
 import removeElements from "./index";
 
 test("removeElements 6", () => {

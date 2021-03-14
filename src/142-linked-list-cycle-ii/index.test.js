@@ -1,4 +1,4 @@
-import { ListNode } from "../linked-list-mock";
+import { ListNode } from "../data-structure";
 import detectCycle from "./index";
 
 test("detectCycle node2", () => {

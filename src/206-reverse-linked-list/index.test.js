@@ -1,4 +1,4 @@
-import { ListNode, print } from "../linked-list-mock";
+import { ListNode, print } from "../data-structure";
 
 import reverseList from "./index";
 
