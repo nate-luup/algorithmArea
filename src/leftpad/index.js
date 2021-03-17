@@ -8,7 +8,7 @@ function leftpad1(str, len, ch) {
   return Array(length).join(ch) + str;
 }
 // 算法复杂度olog(N)
-function leftpad(str, len, ch) {
+function leftpad2(str, len, ch) {
   if (!ch && ch !== 0) {
     ch = " ";
   }
@@ -27,6 +27,28 @@ function leftpad(str, len, ch) {
     ch += ch; // 0 00 0000
 
     length = parseInt(length / 2);
+  }
+}
+// 按位操作
+function leftpad(str, len, ch) {
+  if (!ch && ch !== 0) {
+    ch = " ";
+  }
+  ch = ch + "";
+  let length = len - str.length;
+  // 二分法
+  let total = "";
+  while (length) {
+    if (length & 1) {
+      total += ch;
+    }
+
+    if (length == 1) {
+      return total + str;
+    }
+    ch += ch; // 0 00 0000
+
+    length = length >> 1;
   }
 }
 
