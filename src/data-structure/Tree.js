@@ -37,4 +37,10 @@ function tree2Str(root) {
   return ret.join("=>");
 }
 
-export { TreeNode, tree2Str };
+export {
+  TreeNode,
+  tree2Str,
+  preorderTraversal,
+  inorderTraversal,
+  postorderTraversal,
+};
