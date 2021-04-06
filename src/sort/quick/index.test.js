@@ -1,4 +1,4 @@
-import { qs, printData } from "./quickSort";
+import { qs, printData } from "./index";
 
 test("quick sort", () => {
   let a = [4, 8, 6, 5, 2, 1, 3, 9, 7];
