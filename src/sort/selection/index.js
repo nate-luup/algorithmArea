@@ -1,12 +1,4 @@
-const exch = (a, i, j) => {
-  let t = a[i];
-  a[i] = a[j];
-  a[j] = t;
-};
-
-const less = (a, b) => {
-  return a < b;
-};
+import { exch, less } from "../shared";
 
 /**
  * 将a[]按照升序排列
