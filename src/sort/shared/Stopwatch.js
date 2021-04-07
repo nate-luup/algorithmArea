@@ -4,7 +4,6 @@
  *  programming task (wall-clock time).
  */
 class Stopwatch {
-  start = 0;
   /**
    * Initializes a new stopwatch.
    */
