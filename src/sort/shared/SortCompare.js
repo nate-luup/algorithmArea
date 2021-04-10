@@ -3,20 +3,28 @@ import Stopwatch from "./Stopwatch";
 import Insertion from "../insertion";
 import Selection from "../selection";
 import Shell from "../shell";
-
+import Merge from "../merge";
+const ALG_MAP = {
+  Selection: "Selection",
+  Insertion: "Insertion",
+  Shell: "Shell",
+  Merge: "Merge",
+};
 const time = (alg, a) => {
   let timer = new Stopwatch();
-  if (alg === "Selection") {
+  if (alg === ALG_MAP.Selection) {
     Selection(a);
   }
-  if (alg === "Insertion") {
+  if (alg === ALG_MAP.Insertion) {
     Insertion(a);
   }
-  if (alg === "Shell") {
+  if (alg === ALG_MAP.Shell) {
     Shell(a);
   }
+  if (alg === ALG_MAP.Merge) {
+    Merge(a);
+  }
   let elapsedTime = timer.elapsedTime();
-  console.log(elapsedTime)
   return elapsedTime;
 };
 const timeRandomInput = (alg, len, repeat) => {
@@ -28,29 +36,11 @@ const timeRandomInput = (alg, len, repeat) => {
     for (let j = 0; j < len; j++) {
       a[j] = StdRandom.uniform(100000);
     }
-    console.log(a);
-    // console.log(total);
+    // console.log(a);
     total += time(alg, a);
   }
-  console.log(total);
   return total;
 };
 
-function test() {
-  let len = 10000;
-  let repeat = 100;
-  let alg1 = "Selection";
-  let alg2 = "Insertion";
-  let alg3 = "Shell";
-
-  let t1 = timeRandomInput(alg1, len, repeat);
-    let t2 = timeRandomInput(alg2, len, repeat);
-    let t3 = timeRandomInput(alg3, len, repeat);
-
-  console.log(`${alg1} elapsed Time: ${t1}`);
-    console.log(`${alg2} elapsed Time: ${t2}`);
-    console.log(`${alg3} elapsed Time: ${t3}`);
-}
-
-test()
-// export default timeRandomInput;
+export default timeRandomInput;
+export { ALG_MAP };
