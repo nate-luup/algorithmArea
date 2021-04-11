@@ -4,11 +4,13 @@ import Insertion from "../insertion";
 import Selection from "../selection";
 import Shell from "../shell";
 import Merge from "../merge";
+import Quick from "../quick";
 const ALG_MAP = {
   Selection: "Selection",
   Insertion: "Insertion",
   Shell: "Shell",
   Merge: "Merge",
+  Quick: "Quick",
 };
 const time = (alg, a) => {
   let timer = new Stopwatch();
@@ -23,6 +25,9 @@ const time = (alg, a) => {
   }
   if (alg === ALG_MAP.Merge) {
     Merge(a);
+  }
+  if ((alg = ALG_MAP.Quick)) {
+    Quick(a);
   }
   let elapsedTime = timer.elapsedTime();
   return elapsedTime;
